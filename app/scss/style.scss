@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+$transparentWhite: hsla(0, 0%, 100%, 0.75); // Paragraphs
+$veryLightGray: hsl(0, 0%, 95%); // Background, headings, buttons
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  position: relative;
+  background-color: $veryLightGray;
+}
+
+p {
+  color: $transparentWhite;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: $veryLightGray;
+}
+
+a {
+  text-decoration: none;
+  background-color: $veryLightGray;
+  color: $darkCyan;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-basis: 59.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card {
+  flex-basis: 19.8rem;
+  padding: 4rem 3rem;
+}
+
+.sedans {
+  background-color: $brightOrange;
+}
+
+.suvs {
+  background-color: $darkCyan;
+}
+
+.luxury {
+  background-color: $veryDarkCyan;
+}
+
+// Mobile Design
+@media (max-width: 980px) {
+  .cards {
+    flex-direction: column;
+    flex-basis: 21rem;
+  }
+
+  .card {
+    max-width: 330px;
+  }
+}
