@@ -47,7 +47,6 @@ h2 {
 a {
   text-decoration: none;
   background-color: $veryLightGray;
-  color: $darkCyan;
   padding: 0.7rem 2rem;
   border-radius: 2rem;
 }
@@ -66,20 +65,51 @@ a {
   padding: 4rem 3rem;
 }
 
+.img {
+  width: 64px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-sedan {
+    background-image: url(/images/icon-sedans.svg);
+  }
+
+  &-suv {
+    background-image: url(/images/icon-suvs.svg);
+  }
+
+  &-luxury {
+    background-image: url(/images/icon-luxury.svg);
+  }
+}
+
 .sedans {
   background-color: $brightOrange;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+
+  a {
+    color: $brightOrange;
+  }
 }
 
 .suvs {
   background-color: $darkCyan;
+
+  a {
+    color: $darkCyan;
+  }
 }
 
 .luxury {
   background-color: $veryDarkCyan;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
+
+  a {
+    color: $veryDarkCyan;
+  }
 }
 
 // Mobile Design
